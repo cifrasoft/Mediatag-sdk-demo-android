@@ -4,7 +4,14 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {url 'https://developer.huawei.com/repo/'}
-        jcenter() // Warning: this repository is going to shut down soon
+
+        maven {
+            url = uri("https://maven.pkg.github.com/cifrasoft/media-tag-sdk-android/")
+            credentials {
+                username "login"
+                password "token"    //token for download packages
+            }
+        }
     }
 }
 rootProject.name = "EventSDKDemo"

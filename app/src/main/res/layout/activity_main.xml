@@ -50,6 +50,17 @@
                     android:layout_weight="1"
                     android:textSize="@dimen/button_text_size"
                     app:icon="@drawable/ic_baseline_stop_24" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_heartbeat"
+                    style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/button_text_size"
+                    android:text="@string/heartbeat"
+                    />
+
             </com.google.android.material.button.MaterialButtonToggleGroup>
 
 
@@ -142,19 +153,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
-
-
-            <ToggleButton
-                android:id="@+id/btn_heartbeat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textOff="@string/start_heartbeat"
-                android:visibility="gone"
-                android:textOn="@string/stop_heartbeat">
-
-            </ToggleButton>
-
         </LinearLayout>
 
     </ScrollView>
@@ -165,6 +163,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="send event" />
+        android:text="@string/send_event" />
 
 </RelativeLayout>
